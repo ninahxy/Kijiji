@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kijiji.com</title>
+    <meta name="description" content="This website is about redesigning Kijiji.">
+    <meta name="author" content="Nina ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uni6yvg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+  </head>
+  <body>
+    <!-- pop up box for login -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Sign In</p>
+          <button id="popupCloseButton" class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- @TODO: put your form here-->
+          <input type="text" id="usernameBox" placeholder="Enter username"> <br>
+          <input type="text" id="passwordBox" placeholder="Enter password">
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success" id="loginButton">Login</button>
+        </footer>
+      </div>
+    </div> <!-- //end popup box -->
+
+    <header class="head">
+
+      <div class="logo">
+          <a href="#home"><img src="img/logo-whitenew.svg" alt="KijijiLogo"></a>
+      </div>
+
+      <a class="signIn" id="signInButton">Sign in</a>
+
+      <section class="container">
+        <div class="control has-icons-left has-icons-right">
+        <input class="input " type="search" placeholder="search Kijiji">
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+        </div>         
+        <div class="SizeOfAd">
+        <div class="dropdown  is-hoverable">
+          <div class="dropdown-trigger">
+            <button class="button SizeOfAd" aria-haspopup="true" aria-controls="dropdown-menu4">
+              <span>All ads</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                  <a href="#" class="dropdown-item">
+                      Buy & Sell
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Services
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Car & Vehicles
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Vacation & Rentals
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Community
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Real Estate
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Jobs
+                    </a>              
+                </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="SizeOfAd">
+          <div class="dropdown  is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button SizeOfAd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>Location</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                      <a href="#" class="dropdown-item">
+                        City of toronto
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        York region
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Durham region
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Drampton-caledon
+                        </a>  
+                      <a href="#" class="dropdown-item">
+                        Mississauga
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        Oakville-Milton
+                      </a>              
+                  </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+    </header>
+
+    <section class="ImagContainer">
+
+      <div class="textContainer"><a href="#">
+        <img class="gal-img" src="/img/Car.jpg" alt="Car">
+        <div class="centered">Cars & Trucks</div>
+      </a>
+      </div>
+
+      <div class="textContainer"><a href="#">
+        <img class="gal-img" src="/img/classic-car.jpg" alt="classic-car">
+        <div class="centered">Classic-car</div>
+      </a>
+      </div>
+
+      <div class="textContainer"><a href="#">
+        <img class="gal-img" src="/img/Furniture1.jpg" alt="Furniture1.jpg">
+        <div class="centered">Furniture</div>
+      </a>
+      </div>
+
+      <div class="textContainer"><a href="#">
+         <img class="gal-img" src="/img/Outdoor & Garden.jpg" alt="Outdoor & Garden">
+         <div class="centered">Cars & Trucks</div>
+        </a>
+      </div>
+            
+      <div class="textContainer"><a href="#">
+         <img class="gal-img" src="/img/Tools.jpg" alt="Tools">
+         <div class="centered">Tools</div>
+        </a>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="Format">
+        <a class="titleFormat" href="#">Related Hashtags</a>
+
+        <!-- related hashtags-->
+        <ul class="subFormat has-text-centered">
+          <li><a href="#">#modern</a></li>
+          <li><a href="#">#office chair</a></li>
+          <li><a href="#">#sofabed</a></li>
+          <li><a href="#">#coffee table</a></li>
+          <li><a href="#">#queen size bed</a></li>
+          <li><a href="#">#lighting</a></li>
+          <li><a href="#">#shelf unit</a></li>
+          <li><a href="#">#bookcase</a></li>
+          <li><a href="#">#dining</a></li>
+          <li><a href="#">#armchair</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="FilterContainer">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="dropdown is-hoverable maximum">
+              <div class="dropdown-trigger maximum">
+                <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>
+                    Location
+                  </span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    City of Toronto
+                  </a>
+                  <a class="dropdown-item">
+                    Milton
+                  </a>
+                  <a class="dropdown-item">
+                    York Region
+                  </a>
+                  <a class="dropdown-item">
+                      Brampton
+                  </a>
+                </div>
+              </div>
+          </div> 
+        </div>
+
+        <div class="column is-3">
+            <div class="dropdown is-hoverable maximum">
+                <div class="dropdown-trigger maximum">
+                  <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>
+                      Set Price Range
+                    </span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                      Under 100
+                    </a>
+                    <a class="dropdown-item">
+                      100-400
+                    </a>
+                    <a class="dropdown-item">
+                      400-800
+                    </a>
+                    <a class="dropdown-item">
+                      800+
+                    </a>
+                  </div>
+                </div>
+            </div> <!-- dropdown -->
+          </div> <!-- //column2 -->
+
+          
+        <!-- column 3 -->
+        <div class="column is-3">
+          <div class="dropdown is-hoverable maximum">
+                <div class="dropdown-trigger maximum">
+                  <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>
+                      All Listings
+                    </span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div> <!-- dropdown-trigger -->
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                      Date (most recent)
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Price (high to low)
+                    </a>
+                    <a class="dropdown-item">
+                      Price (low to high)
+                    </a>
+                  </div> 
+                </div> 
+          </div>
+        </div> <!-- //column 3-->
+
+          
+
+        <!-- column 4 -->
+        <div class="column is-3">
+            <div class="dropdown is-hoverable maximum">
+                <div class="dropdown-trigger maximum">
+                  <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>
+                      Posted Within
+                    </span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                      Last 24 hours
+                    </a>
+                    <a class="dropdown-item">
+                      Last 48 hours
+                    </a>
+                    <a class="dropdown-item">
+                      Last 96 hours
+                    </a>
+                  </div>
+                </div>
+            </div> <!-- dropdown -->
+        </div> <!-- //column4 -->
+  
+        </div><!-- columns -->
+
+
+    </section>
+
+
+    <section class="ProductContainer">
+      <div class="product1"><a href="#">
+        <img src="img/desk.JPG" alt="desk" >
+        <p>Herman Miller Mirra Office Chair</p>
+      </a>
+      </div>
+
+      <div class="product1"><a href="#">
+          <img src="img/Cars & Trucks.jpg" alt="desk" height=200px>
+          <p>Herman Miller Mirra Office Chair</p>
+        </a>
+        </div>
+
+
+        <div class="product1"><a href="#">
+            <img src="img/Motorcycles.jpg" alt="desk">
+            <p>Herman Miller Mirra Office Chair</p>
+          </a>
+          </div>
+    
+          <div class="product1"><a href="#">
+              <img src="img/Boats & Watercraft.jpg" alt="desk">
+              <p>Herman Miller Mirra Office Chair</p>
+            </a>
+            </div>
+
+            <div class="product1"><a href="#">
+                <img src="img/home-for-sale-by-owner-FSBO-Stocksy_898524-840c82.jpg" alt="desk">
+                <p>Herman Miller Mirra Office Chair</p>
+              </a>
+              </div>
+        
+              <div class="product1"><a href="#">
+                  <img src="img/apartment.jpg" alt="desk">
+                  <p>Herman Miller Mirra Office Chair</p>
+                </a>
+                </div>
+          
+    </section>
+
+    <section class="GetApp">
+    <div class="columns GetAppitem1">
+        <div class="column is-11 is-offset-1"><h1 class="GeTitle">Get the free app now!</h1></div>
+    </div>
+
+    <div class="columns GetAppitem2">
+        <div class="column is-11 is-offset-1">Take Canada’s #1 classifieds site with you
+            Buy and seek new or used item wherever you go !</div>
+    </div>
+
+    <div class="columns GetAppitem3">
+        <div class="column is-3 is-offset-1" style="width: 200px;"><img src="img/apple.png" alt="apple"></div>
+        <div class="column is-3 is-offset-1" style="width: 200px;"><img src="img/googleplay.png" alt="googleplay"></div>
+    </div>
+
+    <div class="columns GetAppitem4">
+        <div class="column is-8 is-offset-2" style="width: 400px;"><img src="img/phone.png" alt="apple"></div>
+    </div>
+    </section>
+
+    <footer>
+
+
+        <section class="footer-body">
+   
+         <div class="text">    
+   
+             <div class="text-left">
+                <div class="LogoBig">
+                    <a href="#home"><img src="img/logo-whitenew.svg" alt="KijijiLogo"></a>
+                </div>
+    
+             <h2 class="text-left" >Subscribe to Kijiji via Email</h2>
+             <form class="form-inline" action="/action_page.php">
+             <input type="email" id="email" placeholder="Enter email" name="email">
+             <button type="submit">Submit</button>
+             </form>
+             </div>
+   
+             <ul>
+             <li><a href="#"> About </a></li>
+             <li> <a href="#">Careers </a></li> 
+             <li><a href="#"> Member Benefits</a></li>
+             <li> <a href="#">Kijiji en français </a></li> 
+             </ul>
+   
+             <ul>
+             <li><a href="#"> Terms of use </a></li>
+             <li><a href="#">Privacy policy </a></li>
+             <li><a href="#">Posting policy </a></li>
+             <li><a href="#">AdChoice </a></li>
+             <li><a href="#"> Help Desk</a></li>
+
+             </ul>
+   
+             <ul>
+             <li> <a href="#">Kijiji Autos </a></li>
+             <li><a href="#">Kijiji Central</a></li>
+             <li> <a href="#">Kijiji mobile payment  </a></li>
+             <li><a href="#">Tools ti promote ads</a></li>
+             <li><a href="#">eBay Ckassifieds Sites</a></li>
+
+             </ul>
+   
+         </div>
+   
+   
+         </section>
+   
+         <section class="bottom">
+             <p class="text-bottom"><a href="#">© Kijiji.COM 2019</a></p> 
+             <ul class="social">
+               <li><a href="#"><i class="fab fa-facebook-square"></i></a></li> 
+               <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+             </ul>
+         </section>
+   
+    </footer>
+   
+
+    <!-- javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
