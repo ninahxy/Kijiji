@@ -17,6 +17,18 @@
     top:0;
     left:0;
 }
+
+#sel{
+  display: none;
+}
+#fav{
+  display: none;
+}
+#sol{
+  display: none;
+}
+
+
 .headSize{
     position: fixed;
     top:2.5em;
