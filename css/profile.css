@@ -18,7 +18,11 @@
     left:0;
 }
 
-#sel{
+#products{
+  margin-left: 1em;
+}
+
+/* #sel{
   display: none;
 }
 #fav{
@@ -26,7 +30,7 @@
 }
 #sol{
   display: none;
-}
+} */
 
 
 .headSize{

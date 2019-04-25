@@ -1,5 +1,11 @@
+
+// make a greeting 
 const name = localStorage.getItem("username")
 document.getElementById("greeting").innerHTML = "Welcome " + name + " " + "!";
+// make a greeting 
+
+
+// make the tab clickable sorting by category
 
 const allProducts = [
     { id: 1001, name: `desk`, price: 200, img: `/selling/desk.jpg`, catId: 2001, purpose: `sel`}, 
@@ -15,7 +21,7 @@ const allProducts = [
     { id: 2010, name: `sofa3`, price: 1000, img: `/sold/sofa3.JPG`, catId: 2002, purpose: `sol` },
 
     { id: 3010, name: `car seat`, price: 1000, img: `/fav/car seat.jpg`, catId: 2003, purpose: `fav` },
-    { id: 3010, name: `chair`, price: 1000, img: `/fav/chair.jpg`, catId: 2003, purpose: `fav` },
+    { id: 3010, name: `chair`, price: 700, img: `/fav/chair.jpg`, catId: 2003, purpose: `fav` },
     { id: 3010, name: `desk lamp`, price: 1000, img: `/fav/desk lamp.jpg`, catId: 2003, purpose: `fav` },
     { id: 3010, name: `lamp`, price: 1000, img: `/fav/lamp.jpg`, catId: 2003, purpose: `fav` },
     { id: 3010, name: `shelf`, price: 1000, img: `/fav/shelf.jpg`, catId: 2003, purpose: `fav` },
@@ -34,8 +40,8 @@ const printOneProduct = (prod) => {
     
     <div class="product1">
         <a href="#">
-            <img src="img/${ prod.img }" alt="${prod.name}">
-            <p>${prod.name}</p>
+            <img src="img/${ prod.img }" alt="${prod.name}" height=250px width=200px >
+            <p>${prod.name}   ${prod.price}</p>
         </a>
     </div>`;
 };
@@ -55,3 +61,21 @@ const printList = () => {
 
 printList();
 filterTabs.addEventListener('change', printList)
+
+// make the tab clickable sorting by category
+
+document.getElementById(`sel`).addEventListener("click", showActive)
+document.getElementById(`fav`).addEventListener("click", hideActive)
+document.getElementById(`sol`).addEventListener("click", hideActive)
+
+function showActive() {
+    document.querySelector(".sel").classList.add("is-active")
+}
+function hideActive() {
+    document.querySelector(".sel").classList.remove("is-active")
+}
+
+
+
+
+
