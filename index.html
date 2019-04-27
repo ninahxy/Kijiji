@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- pop up box for login -->
-    <div class="modal">
+    <div class="modal" id="login">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -23,14 +23,68 @@
         </header>
         <section class="modal-card-body">
           <!-- @TODO: put your form here-->
-          <input type="text" id="usernameBox" placeholder="Enter username"> <br>
-          <input type="text" id="passwordBox" placeholder="Enter password">
+          <div class="field">
+          <label class="label">Username</label>
+          <div class="control">
+          <input class="input" type="text" id="usernameBox" placeholder="e.g : nina"> 
+        </div>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+          <input class="input" type="text" id="passwordBox" placeholder="e.g : 12345">
+        </div>
+      </div>
+          <p class="help"><a href="#">Forget password</a></p>
         </section>
         <footer class="modal-card-foot">
           <button class="button is-success" id="loginButton">Login</button>
         </footer>
       </div>
-    </div> <!-- //end popup box -->
+    </div> 
+    <!-- //end popup box -->
+
+        <!-- pop up box for SignUp -->
+        <div class="modal SignUp" id="SignUp">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">SignUp</p>
+              <button id="PopupCloseButton" class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+              <!-- @TODO: put your form here-->
+              <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control">
+              <input class="input" type="text" id="usernameBox" placeholder="Enter username"> 
+            </div>
+          </div> 
+      
+              <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+              <input class="input" type="text" id="email" placeholder="Enter email"> 
+            </div>
+          </div> 
+      
+              <div class="field">
+                  <label class="label">Username</label>
+                  <div class="control">
+              <input class="input" type="text" id="passwordBox" placeholder="Enter password">   
+            </div>
+          </div> 
+       
+           </section>
+            <footer class="modal-card-foot">
+              <button class="button is-success" id="SignUpButton">Save</button>
+              <button class="button " id="ForgetButton">Cancle</button>
+    
+            </footer>
+          </div>
+        </div>  
+        <!-- //end popup box -->
+    
 
     <header class="head">
 
@@ -38,7 +92,8 @@
           <a href="#home"><img src="img/logo-whitenew.svg" alt="KijijiLogo"></a>
       </div>
 
-      <a class="signIn" id="signInButton">Sign in</a>
+      <a class="signIn" id="signInButton">Sign In</a>
+      <a class="signUp" id="signUpButton">Sign Up</a>
 
       <section class="container">
         <div class="control has-icons-left has-icons-right">

@@ -2,6 +2,7 @@
 document.getElementById("signInButton").addEventListener("click", showPopup)
 document.getElementById("popupCloseButton").addEventListener("click", hidePopup)
 
+
 function showPopup() {
     // classList.add() adds the "is-active" class to the popup
     document.querySelector(".modal").classList.add("is-active")
@@ -48,3 +49,18 @@ document.getElementById("loginButton").addEventListener("click", login)
 
 // -------- END LOGIN BUTTON --------
 
+
+document.getElementById("signUpButton").addEventListener("click", ShowPopup)
+document.getElementById("PopupCloseButton").addEventListener("click", HidePopup)
+
+function ShowPopup() {
+    // classList.add() adds the "is-active" class to the popup
+    document.querySelector(".SignUp").classList.add("is-active")
+}
+
+function HidePopup() {
+    document.querySelector(".SignUp").classList.remove("is-active")
+}
+
+
+// -------- END Signup BUTTON --------
