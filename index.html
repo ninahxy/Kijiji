@@ -217,28 +217,21 @@
 
     </section>
 
-    <section>
-      <div class="Format">
+    <section name="filters" id="filters">
+
+      <section class="Format">
         <a class="titleFormat" href="#">Related Hashtags</a>
-
-        <!-- related hashtags-->
-        <ul class="subFormat has-text-centered">
-          <li><a href="#">#modern</a></li>
-          <li><a href="#">#office chair</a></li>
-          <li><a href="#">#sofabed</a></li>
-          <li><a href="#">#coffee table</a></li>
-          <li><a href="#">#queen size bed</a></li>
-          <li><a href="#">#lighting</a></li>
-          <li><a href="#">#shelf unit</a></li>
-          <li><a href="#">#bookcase</a></li>
-          <li><a href="#">#dining</a></li>
-          <li><a href="#">#armchair</a></li>
+        <div >
+        <ul class="subFormat has-text-centered" name="categories" id="categories">
+          <li><a href="#" value="any">#office chair</a></li>
         </ul>
-      </div>
-    </section>
+        </div>
+      </section>
+       <!-- related categories-->
 
-    <section class="FilterContainer">
+       <section class="FilterContainer">
       <div class="columns">
+
         <div class="column is-3">
           <div class="dropdown is-hoverable maximum">
               <div class="dropdown-trigger maximum">
@@ -268,14 +261,14 @@
                 </div>
               </div>
           </div> 
-        </div>
+        </div> <!-- //column1 -->
 
         <div class="column is-3">
             <div class="dropdown is-hoverable maximum">
                 <div class="dropdown-trigger maximum">
                   <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>
-                      Set Price Range
+                    <span id="priceAll" name="price" value="any">
+                      Any price
                     </span>
                     <span class="icon is-small">
                       <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -284,17 +277,11 @@
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
                   <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
+                    <a href="#" class="dropdown-item" id="priceUnder" name="price" value="under">
                       Under 100
                     </a>
-                    <a class="dropdown-item">
-                      100-400
-                    </a>
-                    <a class="dropdown-item">
-                      400-800
-                    </a>
-                    <a class="dropdown-item">
-                      800+
+                    <a href="#" class="dropdown-item" id="priceOver" name="price" value="over">
+                      $100 or more
                     </a>
                   </div>
                 </div>
@@ -303,7 +290,7 @@
 
           
         <!-- column 3 -->
-        <div class="column is-3">
+        <div class="column is-3" >
           <div class="dropdown is-hoverable maximum">
                 <div class="dropdown-trigger maximum">
                   <button class="button maximum" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -330,8 +317,6 @@
                 </div> 
           </div>
         </div> <!-- //column 3-->
-
-          
 
         <!-- column 4 -->
         <div class="column is-3">
@@ -366,47 +351,11 @@
 
 
     </section>
+  </section>
 
 
-    <section class="ProductContainer">
-      <div class="product1"><a href="#">
-        <img src="img/desk.JPG" alt="desk" >
-        <p>Herman Miller Mirra Office Chair</p>
-      </a>
-      </div>
+<section class="ProductContainer" id="products"></section>
 
-      <div class="product1"><a href="#">
-          <img src="img/Cars & Trucks.jpg" alt="desk" height=200px>
-          <p>Herman Miller Mirra Office Chair</p>
-        </a>
-        </div>
-
-
-        <div class="product1"><a href="#">
-            <img src="img/Motorcycles.jpg" alt="desk">
-            <p>Herman Miller Mirra Office Chair</p>
-          </a>
-          </div>
-    
-          <div class="product1"><a href="#">
-              <img src="img/Boats & Watercraft.jpg" alt="desk">
-              <p>Herman Miller Mirra Office Chair</p>
-            </a>
-            </div>
-
-            <div class="product1"><a href="#">
-                <img src="img/home-for-sale-by-owner-FSBO-Stocksy_898524-840c82.jpg" alt="desk">
-                <p>Herman Miller Mirra Office Chair</p>
-              </a>
-              </div>
-        
-              <div class="product1"><a href="#">
-                  <img src="img/apartment.jpg" alt="desk">
-                  <p>Herman Miller Mirra Office Chair</p>
-                </a>
-                </div>
-          
-    </section>
 
     <section class="GetApp">
     <div class="columns GetAppitem1">
