@@ -13,12 +13,12 @@ const allProducts = [
     { id: 1003, name: `shoes`, price: 100, img: `/selling/shoes.jpg`, catId: 2001, purpose: `sel` },
     { id: 1004, name: `table`, price: 1000, img: `/selling/table.jpg`, catId: 2001, purpose: `sel` },
 
-    { id: 2005, name: `sofa`, price: 1000, img: `/sold/sofa.JPG`, catId: 2002, purpose: `sol` },
+    { id: 2005, name: `sofa`, price: 1000, img: `/sold/sofa.jpg`, catId: 2002, purpose: `sol` },
     { id: 2006, name: `bed`, price: 1030, img: `/sold/bed.jpg`, catId: 2002, purpose: `sol` },
     { id: 2007, name: `bed1`, price: 2000, img: `/sold/bed1.jpg`, catId: 2002, purpose: `sol` },
     { id: 2008, name: `bike`, price: 3020, img: `/sold/bike.jpg`, catId: 2002, purpose: `sol` },
     { id: 2009, name: `sofa1`, price: 1000, img: `/sold/sofa1.jpg`, catId: 2002, purpose: `sol` },
-    { id: 2010, name: `sofa3`, price: 1000, img: `/sold/sofa3.JPG`, catId: 2002, purpose: `sol` },
+    { id: 2010, name: `sofa3`, price: 1000, img: `/sold/sofa3.jpg`, catId: 2002, purpose: `sol` },
 
     { id: 3010, name: `car seat`, price: 1000, img: `/fav/car seat.jpg`, catId: 2003, purpose: `fav` },
     { id: 3010, name: `chair`, price: 700, img: `/fav/chair.jpg`, catId: 2003, purpose: `fav` },
