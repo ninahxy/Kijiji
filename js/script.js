@@ -145,7 +145,7 @@ const allCategories = [
   
   // *** EVENT LISTENER ****************************************
   // When one of the values in the filter form changes, let's filter and then reprint
-  domFilters.addEventListener('change', event => {
+  domFilters.addEventListener('click', event => {
     
     // 1. Start with the full list of products
     let filteredProducts = allProducts;
